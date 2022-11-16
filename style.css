@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    background-color: #23ACDB;
+}
+
+.logo {
+    padding-bottom: 2px;
+}
+
+
+.SiO2 {
+    width: 200px;
+    position: absolute;
+    left: 40%;
+}
+
+.outer{
+    padding-top: 4%;
+    width: 80vw;
+    top: 43.5%;
+    left: 50%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 2.2em 1.7em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.box{
+    display: inline-block;
+    padding: 4.5%;
+    background-color: #fff;
+    border-radius: 0.6em;
+    box-shadow: 0 1.2em 3em rgba(0, 4, 52, 0.2);
+    margin: 1%;
+    
+}
+
+
+.container {
+    background-color: #ffffff;
+    width: 125vw;
+    font-size: 14px;
+    max-width: 51.25em;
+    padding: 2.2em 1.2em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 65%;
+    border-radius: 0.6em;
+    box-shadow: 0 1.2em 3em rgba(0, 4, 52, 0.2);
+    padding-bottom: 2%;
+    display: block;
+
+}
+
+
+.prompt-container {
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    
+}
+
+.container input,
+.container button {
+    font-size: 1.25em;
+    outline: none;
+    border: none;
+    border-radius: 0.4em;
+}
+
+.container input{
+    width: 75%;
+    border: 1px solid #bdbdbf;
+    padding: 0.6em;
+}
+
+.container button{
+    width: 20%;
+    background-color: #5AB71D;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0.7em;
+    cursor: pointer;
+}
+
+.factbox{
+    position: relative;
+}
+
+.fact {
+    background-color: #ffffff;
+    box-shadow: 0 0 1.2em rgba(0, 4, 52, 0.1);
+    margin: 1em auto 0 auto;
+    padding: 0.8em 1.8em;
+    border-radius: 0.6em;
+    border: none;
+    border-bottom: 0.6em solid#23ACDB;
+    display: none;
+    bottom: auto;
+    overflow-x: auto;
+    
+
+}
+
+.fact p {
+    font-size: 1.15em;
+    font-weight: 400;
+    color: #50526b;
+    line-height: 1.8em;
+    text-align: justify;
+    margin-top: 0.8em;
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

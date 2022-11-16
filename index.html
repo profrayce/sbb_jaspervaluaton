@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <link rel="stylesheet" href="style.css" />   
+        <script>
+            function change_css(){
+                document.querySelectorAll(".fact").forEach(a=>a.style.display = "block");
+                document.querySelectorAll(".outer").forEach(a=>a.style.display = "none");
+            }
+        </script>
+    </head>
+    <body>
+      <div>
+        <div class="logo"> <img src="./imagenes/sbbAzulLogo.jpg" class="SiO2"> </div>
+           <div class="outer">
+            <div class="box">
+                <p>write a blog outline <br> about insider trading</p>
+            </div>
+            <div class="box">
+                <p>write a product ad for LinkedIn targeted at single <br> young professionals promoting  for a new social dating app </p>
+            </div>
+            <div class="box">
+                <p>write a blog about <br> rent control in NYC</p>
+            </div>
+        </div>
+     </div>
+      
+        <div class="container">
+                <div class="prompt-container">
+                    <input type="text" placeholder="enter prompt here..." id="prompt">
+                    <button id="get-blog-outline" onclick= "change_css();">Submit</button>
+                </div>
+                <div class="factbox"> 
+                        <div id="outline" class="fact">
+                             <div class="loader"></div>
+                        </div>
+                </div>
+        </div>
+        
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
+
